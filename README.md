@@ -10,7 +10,7 @@
 [Documentation](https://github.com/dorklyorg/dorkly/wiki)
 
 
-Dorkly endpoint for this environment: `https://dorkly-example.jmgkdoeoqbvh4.us-east-1.cs.amazonlightsail.com/`
+Dorkly endpoint for this environment: `https://dorkly-example.ft3i3o46tuitu.us-west-2.cs.amazonlightsail.com/`
 
 ## Environments
 ### dev
