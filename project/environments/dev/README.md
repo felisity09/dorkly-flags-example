@@ -43,7 +43,7 @@ Please follow the LaunchDarkly documentation for [configuring SDKs to use a Rela
 
 Find the SDK-specific section for your SDK; it'll contain a code sample in which one or more endpoint URLs are specified. Copy and use this code sample, setting **all** the URLs to:
 ```
-https://dorkly-example.jmgkdoeoqbvh4.us-east-1.cs.amazonlightsail.com/
+https://dorkly-example.ft3i3o46tuitu.us-west-2.cs.amazonlightsail.com/
 ```
 
 - <details>
@@ -53,7 +53,7 @@ https://dorkly-example.jmgkdoeoqbvh4.us-east-1.cs.amazonlightsail.com/
 
   ```golang
       dorklyConfig := ld.Config{
-          ServiceEndpoints: ldcomponents.RelayProxyEndpoints("https://dorkly-example.jmgkdoeoqbvh4.us-east-1.cs.amazonlightsail.com/"),
+          ServiceEndpoints: ldcomponents.RelayProxyEndpoints("https://dorkly-example.ft3i3o46tuitu.us-west-2.cs.amazonlightsail.com/"),
       }
 
       ldClient, err := ld.MakeCustomClient("sdk-dev-ofucPdsAaLbfMru0", dorklyConfig, 10*time.Second)
@@ -76,9 +76,9 @@ https://dorkly-example.jmgkdoeoqbvh4.us-east-1.cs.amazonlightsail.com/
         };
 
         const options = {
-          baseUrl: 'https://dorkly-example.jmgkdoeoqbvh4.us-east-1.cs.amazonlightsail.com/',
-          streamUrl: 'https://dorkly-example.jmgkdoeoqbvh4.us-east-1.cs.amazonlightsail.com/',
-          eventsUrl: 'https://dorkly-example.jmgkdoeoqbvh4.us-east-1.cs.amazonlightsail.com/',
+          baseUrl: 'https://dorkly-example.ft3i3o46tuitu.us-west-2.cs.amazonlightsail.com/',
+          streamUrl: 'https://dorkly-example.ft3i3o46tuitu.us-west-2.cs.amazonlightsail.com/',
+          eventsUrl: 'https://dorkly-example.ft3i3o46tuitu.us-west-2.cs.amazonlightsail.com/',
         };
 
         const ldclient = LDClient.initialize(clientSideID, context, options);
@@ -88,18 +88,18 @@ https://dorkly-example.jmgkdoeoqbvh4.us-east-1.cs.amazonlightsail.com/
 ## Other handy bits
 All values below and others are available as terraform outputs for easy wiring into your app.
 
-* Endpoint for this environment: `https://dorkly-example.jmgkdoeoqbvh4.us-east-1.cs.amazonlightsail.com/`
+* Endpoint for this environment: `https://dorkly-example.ft3i3o46tuitu.us-west-2.cs.amazonlightsail.com/`
 * client-side id: `dev`
 
 ### SDK Key
 * SDK Key value: `sdk-dev-ofucPdsAaLbfMru0`
-* AWS secret arn: `arn:aws:secretsmanager:us-east-1:078580538686:secret:dorkly-example-dev-sdk-key-A7RiA1`
+* AWS secret arn: `arn:aws:secretsmanager:us-west-2:078580538686:secret:dorkly-example-dev-sdk-key-6vUOjA`
 * AWS secret name: `dorkly-example-dev-sdk-key`
 * AWS: Get secret via cli: `aws secretsmanager get-secret-value --secret-id dorkly-example-dev-sdk-key  | jq -r .SecretString`
 
 ### Mobile Key
 * Mobile Key value: `mob-dev-NnaEQrKd64zCMWR8`
-* Aws secret arn: `arn:aws:secretsmanager:us-east-1:078580538686:secret:dorkly-example-dev-mob-key-L7Ow90`
+* Aws secret arn: `arn:aws:secretsmanager:us-west-2:078580538686:secret:dorkly-example-dev-mob-key-axdFzC`
 * Aws secret name: `dorkly-example-dev-mob-key`
 * Get secret using aws cli: `aws secretsmanager get-secret-value --secret-id dorkly-example-dev-mob-key  | jq -r .SecretString`
 
